@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaCart | Premium E-Commerce</title>
+    <meta
+      name="description"
+      content="NovaCart is a modern premium e-commerce storefront showcasing curated products and a refined shopping experience."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="loader-ring"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">N</span>
+          <span>NovaCart</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html" class="nav-cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Theme toggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow">Premium lifestyle essentials</p>
+            <h1>Upgrade your everyday essentials with modern luxury.</h1>
+            <p>
+              Discover next-generation gadgets, curated fashion pieces, and premium accessories designed for a smarter lifestyle.
+            </p>
+            <div class="hero-actions">
+              <a href="products.html" class="btn btn-primary">Shop Now</a>
+              <a href="about.html" class="btn btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <strong>4.9/5</strong>
+                <span>Customer Rating</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>Support</span>
+              </div>
+              <div>
+                <strong>Fast</strong>
+                <span>Shipping</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div class="glass-card large-card">
+              <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="Modern shopping experience" />
+            </div>
+            <div class="glass-card floating-card">
+              <h3>Limited Edition</h3>
+              <p>Save up to 30% on premium bundles this week.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Shop by Category</p>
+            <h2>Curated collections for every modern lifestyle.</h2>
+          </div>
+          <div class="category-grid">
+            <article class="category-card reveal">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=800&q=80" alt="Fashion" />
+              <div>
+                <h3>Fashion</h3>
+                <p>Minimal essentials and statement pieces.</p>
+              </div>
+            </article>
+            <article class="category-card reveal">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Technology" />
+              <div>
+                <h3>Technology</h3>
+                <p>High-performance devices and accessories.</p>
+              </div>
+            </article>
+            <article class="category-card reveal">
+              <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80" alt="Home" />
+              <div>
+                <h3>Home</h3>
+                <p>Refined interiors with modern comfort.</p>
+              </div>
+            </article>
+            <article class="category-card reveal">
+              <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=800&q=80" alt="Accessories" />
+              <div>
+                <h3>Accessories</h3>
+                <p>Elevated details that complete your look.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Best Sellers</p>
+            <h2>Customers are loving these picks.</h2>
+          </div>
+          <div class="product-grid home-products">
+            <article class="product-card reveal">
+              <span class="badge">20% Off</span>
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Runner shoes" />
+              <div class="product-info">
+                <h3>Aero Runner</h3>
+                <div class="rating"><i class="fa-solid fa-star"></i> 4.8</div>
+                <p>$129.00</p>
+                <button class="btn btn-primary small add-to-cart" data-name="Aero Runner" data-price="129" data-image="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80">Add to Cart</button>
+              </div>
+            </article>
+            <article class="product-card reveal">
+              <span class="badge">New</span>
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80" alt="Smartphone" />
+              <div class="product-info">
+                <h3>Nova Phone</h3>
+                <div class="rating"><i class="fa-solid fa-star"></i> 4.9</div>
+                <p>$899.00</p>
+                <button class="btn btn-primary small add-to-cart" data-name="Nova Phone" data-price="899" data-image="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=800&q=80">Add to Cart</button>
+              </div>
+            </article>
+            <article class="product-card reveal">
+              <span class="badge">Hot</span>
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Watch" />
+              <div class="product-info">
+                <h3>Chrono Watch</h3>
+                <div class="rating"><i class="fa-solid fa-star"></i> 4.7</div>
+                <p>$249.00</p>
+                <button class="btn btn-primary small add-to-cart" data-name="Chrono Watch" data-price="249" data-image="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80">Add to Cart</button>
+              </div>
+            </article>
+            <article class="product-card reveal">
+              <span class="badge">Sale</span>
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Headphones" />
+              <div class="product-info">
+                <h3>Studio Headphones</h3>
+                <div class="rating"><i class="fa-solid fa-star"></i> 4.8</div>
+                <p>$199.00</p>
+                <button class="btn btn-primary small add-to-cart" data-name="Studio Headphones" data-price="199" data-image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80">Add to Cart</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container why-grid">
+          <div class="reveal">
+            <p class="eyebrow">Why Choose Us</p>
+            <h2>The premium shopping experience you deserve.</h2>
+            <p>Every product is selected for quality, design, and long-term value.</p>
+          </div>
+          <div class="info-cards">
+            <article class="info-card reveal">
+              <i class="fa-solid fa-truck-fast"></i>
+              <h3>Express Delivery</h3>
+              <p>Fast, secure shipping to your doorstep.</p>
+            </article>
+            <article class="info-card reveal">
+              <i class="fa-solid fa-shield-halved"></i>
+              <h3>Trusted Quality</h3>
+              <p>Certified products and premium craftsmanship.</p>
+            </article>
+            <article class="info-card reveal">
+              <i class="fa-solid fa-headset"></i>
+              <h3>Dedicated Support</h3>
+              <p>Expert help around the clock for every order.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container testimonials-grid">
+          <div class="reveal">
+            <p class="eyebrow">Testimonials</p>
+            <h2>Trusted by customers who love refined shopping.</h2>
+          </div>
+          <div class="testimonial-list">
+            <article class="testimonial-card reveal">
+              <p>“The ordering experience felt premium from start to finish. Everything arrived beautifully packaged.”</p>
+              <h4>Sarah L.</h4>
+            </article>
+            <article class="testimonial-card reveal">
+              <p>“Beautiful design, effortless checkout, and incredible service. I’ll be back for more.”</p>
+              <h4>Daniel W.</h4>
+            </article>
+            <article class="testimonial-card reveal">
+              <p>“The collection feels curated for modern life. It has become my go-to store.”</p>
+              <h4>Mia R.</h4>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container newsletter reveal">
+          <div>
+            <p class="eyebrow">Stay Inspired</p>
+            <h2>Join our newsletter for exclusive launches and offers.</h2>
+          </div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" />
+            <button class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span class="brand-mark">N</span>
+            <span>NovaCart</span>
+          </a>
+          <p>Modern essentials for the contemporary lifestyle.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </body>
+</html>

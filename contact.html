@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact NovaCart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="loader-ring"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">N</span>
+          <span>NovaCart</span>
+        </a>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="cart.html" class="nav-cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Theme toggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Contact Us</p>
+          <h1>We would love to hear from you.</h1>
+          <p>Reach out for support, collaborations, or inquiries about our products.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-card reveal">
+            <h2>Send us a message</h2>
+            <form class="contact-form" id="contactForm">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+              <input type="text" placeholder="Subject" required />
+              <textarea rows="5" placeholder="How can we help?" required></textarea>
+              <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="contact-details reveal">
+            <div class="glass-card">
+              <h3>Contact Details</h3>
+              <ul>
+                <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                <li><i class="fa-solid fa-envelope"></i> hello@novacart.com</li>
+                <li><i class="fa-solid fa-location-dot"></i> 128 Market Street, New York, NY</li>
+              </ul>
+              <div class="social-links large">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+            </div>
+            <div class="glass-card map-placeholder">
+              <p>Google Maps placeholder</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container faq-section">
+          <div class="section-head reveal">
+            <p class="eyebrow">FAQ</p>
+            <h2>Common questions answered.</h2>
+          </div>
+          <div class="faq-list">
+            <article class="faq-item reveal">
+              <button class="faq-question">
+                <span>Do you offer international shipping?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Yes, we ship to most international destinations with reliable delivery options.</p>
+              </div>
+            </article>
+            <article class="faq-item reveal">
+              <button class="faq-question">
+                <span>Can I return an item?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>We offer a 30-day return window for unused products in their original packaging.</p>
+              </div>
+            </article>
+            <article class="faq-item reveal">
+              <button class="faq-question">
+                <span>How quickly do you reply to support requests?</span>
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <div class="faq-answer">
+                <p>Our support team typically responds within 24 hours during business days.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span class="brand-mark">N</span>
+            <span>NovaCart</span>
+          </a>
+          <p>Modern essentials for the contemporary lifestyle.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </body>
+</html>

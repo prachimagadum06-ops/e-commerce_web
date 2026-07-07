@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About NovaCart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="loader" id="loader">
+      <div class="loader-ring"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">N</span>
+          <span>NovaCart</span>
+        </a>
+        <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="products.html">Products</a>
+          <a href="about.html" class="active">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html" class="nav-cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+          </a>
+          <button class="theme-toggle" id="themeToggle" aria-label="Theme toggle">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">About Our Brand</p>
+          <h1>Built for modern shoppers who value quality and design.</h1>
+          <p>NovaCart combines sleek design, thoughtful service, and premium products into one effortless experience.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container about-grid">
+          <div class="reveal">
+            <p class="eyebrow">Who We Are</p>
+            <h2>Elevating the online shopping experience with intention.</h2>
+            <p>From curated essentials to standout tech, we make it easy to discover products that feel elevated and enduring.</p>
+          </div>
+          <div class="glass-card reveal">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80" alt="Modern workspace" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container split-grid">
+          <article class="info-card reveal">
+            <h3>Mission</h3>
+            <p>Create a premium digital storefront that helps customers discover beautifully crafted products with confidence.</p>
+          </article>
+          <article class="info-card reveal">
+            <h3>Vision</h3>
+            <p>Become the go-to platform for a modern lifestyle rooted in quality, innovation, and thoughtful simplicity.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Our Services</p>
+            <h2>Everything you need for a seamless shopping experience.</h2>
+          </div>
+          <div class="service-list">
+            <article class="service-card reveal">
+              <i class="fa-solid fa-cart-plus"></i>
+              <h3>Fast Checkout</h3>
+              <p>Simple and secure checkout to keep your experience smooth.</p>
+            </article>
+            <article class="service-card reveal">
+              <i class="fa-solid fa-box-open"></i>
+              <h3>Premium Packaging</h3>
+              <p>Every order arrives carefully packed and ready to impress.</p>
+            </article>
+            <article class="service-card reveal">
+              <i class="fa-solid fa-mobile-screen"></i>
+              <h3>Mobile Friendly</h3>
+              <p>Shop seamlessly across desktop, tablet, and mobile devices.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Meet the Team</p>
+            <h2>Experts behind every detail.</h2>
+          </div>
+          <div class="team-grid">
+            <article class="team-card reveal">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=700&q=80" alt="Team member" />
+              <h3>Nina Reyes</h3>
+              <p>Founder & Creative Director</p>
+            </article>
+            <article class="team-card reveal">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" alt="Team member" />
+              <h3>Owen Hart</h3>
+              <p>Head of Product</p>
+            </article>
+            <article class="team-card reveal">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=80" alt="Team member" />
+              <h3>Leah Chen</h3>
+              <p>Customer Experience Lead</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container stats-grid">
+          <article class="stat-card reveal">
+            <h3 class="counter" data-target="25000">0</h3>
+            <p>Happy Customers</p>
+          </article>
+          <article class="stat-card reveal">
+            <h3 class="counter" data-target="1200">0</h3>
+            <p>Products</p>
+          </article>
+          <article class="stat-card reveal">
+            <h3 class="counter" data-target="9800">0</h3>
+            <p>Orders Delivered</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt-bg">
+        <div class="container timeline">
+          <div class="section-head reveal">
+            <p class="eyebrow">Our Story</p>
+            <h2>From a small idea to a thriving premium store.</h2>
+          </div>
+          <div class="timeline-item reveal">
+            <h3>2018</h3>
+            <p>NovaCart began as a passion project focused on design-forward essentials.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <h3>2021</h3>
+            <p>We expanded into curated tech and lifestyle products for modern homes.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <h3>2025</h3>
+            <p>Today we serve customers worldwide with a seamless and elevated shopping journey.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span class="brand-mark">N</span>
+            <span>NovaCart</span>
+          </a>
+          <p>Modern essentials for the contemporary lifestyle.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </body>
+</html>
