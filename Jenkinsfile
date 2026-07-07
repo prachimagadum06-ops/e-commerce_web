@@ -8,15 +8,17 @@ pipeline {
             }
         }
 
-        stage('Verify Files') {
+        stage('Build Docker Image') {
             steps {
-                bat 'dir'
+                bat 'docker build -t ecommerce-web .'
             }
         }
 
-        stage('Success') {
+        stage('Run Docker Container') {
             steps {
-                echo 'Frontend project cloned successfully!'
+                bat 'docker stop ecommerce-web || exit 0'
+                bat 'docker rm ecommerce-web || exit 0'
+                bat 'docker run -d -p 8081:80 --name ecommerce-web ecommerce-web'
             }
         }
     }
